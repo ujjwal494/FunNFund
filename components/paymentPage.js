@@ -69,7 +69,7 @@ const PaymentPage = ({ username }) => {
                     toast.error("Payment verification failed");
                 }
             },
-            "theme": { "color": "#f97316" } // Orange brand color
+            "theme": { "color": "#f97316" } 
         };
 
         var rzp1 = new window.Razorpay(options);
@@ -81,9 +81,9 @@ const PaymentPage = ({ username }) => {
             <ToastContainer />
             <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="afterInteractive" />
 
-            {/* Cover Image Section */}
+            //Cover Image Section
             <div className='cover w-full relative'>
-                {/* FIX: Changed h-[350] to h-96 for a valid Tailwind height */}
+                
                 <img className='object-cover w-full h-96' src={currentUser.coverpic} alt="" />
                 <div className='absolute right-[39.5%] md:right-[47.5%] -bottom-10 border-2 border-white h-20 rounded-full'>
                     <img className='rounded-full object-contain' src={currentUser.profilepic} width={80} height={80} alt="" />
@@ -91,11 +91,8 @@ const PaymentPage = ({ username }) => {
             </div>
 
             {/* Creator Info */}
-            {/* FIX: Added mt-16 to create space for the overlapping profile picture */}
             <div className='info flex justify-center items-center mt-12 mb-10 flex-col gap-1'>
                 <div className='text-lg font-bold'>@{username}</div>
-                {/* ... rest of your code ... */}
-
                 <p className='text-gray-400 text-lg'>Helping {currentUser.name || username} create more magic</p>
                 <div className='flex gap-4 mt-2 text-sm font-medium'>
                     <span className="bg-[#111] border border-gray-800 px-4 py-1 rounded-full text-orange-500">
@@ -108,22 +105,20 @@ const PaymentPage = ({ username }) => {
 
             </div>
 
-            {/* Support Grid */}
+    
             <div className="container mx-auto mt-16 px-4 md:px-10 lg:px-24">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                    {/* Supporters List */}
                     <div className="bg-[#111] border border-gray-800 rounded-3xl p-8 h-[500px] flex flex-col">
                         <h2 className='text-2xl font-bold mb-6 flex items-center gap-2'>
                             Recent Supporters
                         </h2>
                         <div className="overflow-y-auto pr-2 flex-1 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-[#0a0a0a]
-    [&::-webkit-scrollbar-thumb]:bg-orange-500
-    [&::-webkit-scrollbar-thumb]:rounded-full
-    [&::-webkit-scrollbar-thumb]:border
-    [&::-webkit-scrollbar-thumb]:border-gray-800
-    [scrollbar-width:thin]
-    [scrollbar-color:black_#111]">
+                            [&::-webkit-scrollbar-thumb]:bg-orange-500
+                            [&::-webkit-scrollbar-thumb]:rounded-full
+                            [&::-webkit-scrollbar-thumb]:border
+                            [&::-webkit-scrollbar-thumb]:border-gray-800
+                            [scrollbar-width:thin]
+                            [scrollbar-color:black_#111]">
                             {payments.length === 0 ? (
                                 <div className="flex flex-col items-center justify-center h-full text-gray-500 italic">
                                     No support yet. Be the first!
@@ -144,7 +139,7 @@ const PaymentPage = ({ username }) => {
                         </div>
                     </div>
 
-                    {/* Payment Box */}
+                    //Payment box
                     <div className="bg-[#111] border border-gray-800 rounded-3xl p-8 flex flex-col">
                         <h2 className='text-2xl font-bold mb-6'>Send some <span className="text-orange-500">Love</span></h2>
                         <div className='space-y-4'>
@@ -185,7 +180,7 @@ const PaymentPage = ({ username }) => {
                             </div>
                         </div>
 
-                        {/* Quick Pay Tiers */}
+                        //Quick pay
                         <div className='mt-10'>
                             <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Quick Support</p>
                             <div className='grid grid-cols-3 gap-3'>
