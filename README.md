@@ -1,3 +1,7 @@
+FunNfund is a platform where you can fund your favorite creator, streamers ,etc without any cost cutting.
+This is the true way to support your favorite creator beacuse they get what you send them there no cost reduction in between 
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
