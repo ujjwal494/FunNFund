@@ -6,7 +6,7 @@ const connectDB = async () => {
       return
     }
 
-    const conn = await mongoose.connect("mongodb://localhost:27017/funNfund")
+    const conn = await mongoose.connect("mongodb+srv://ujjwal:Ujjwal%401@cluster0.lhj8u99.mongodb.net/")
 
     console.log(`MongoDB Connected: ${conn.connection.host}`)
   } catch (error) {
