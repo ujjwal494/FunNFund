@@ -9,16 +9,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#050505] text-white overflow-x-hidden">
 
-      {/* ── HERO ── */}
+      
       <section className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center">
 
-        {/* Grid background */}
+      
         <div className="absolute inset-0 bg-[linear-gradient(rgba(249,115,22,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(249,115,22,0.04)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,black_40%,transparent_100%)]" />
 
-        {/* Glow orb */}
+        
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Badge */}
+       
         <div className="relative mb-8 inline-flex items-center gap-2 border border-orange-500/30 bg-orange-500/5 rounded-full px-5 py-2 text-sm font-semibold text-orange-400 tracking-wide">
           <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
           0% Platform Fees — Creators Keep Everything
@@ -58,7 +58,7 @@ export default function Home() {
 
       <section className="relative py-32 px-6">
 
-        {/* Section label */}
+        
         <div className="max-w-5xl mx-auto mb-20">
           <p className="text-xs font-bold tracking-[0.3em] uppercase text-orange-500 mb-4">Why funNfund</p>
           <h2 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 2 — featured */}
+          {/* Card 2*/}
           <div className="group relative bg-orange-500 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
             <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-xl" />
@@ -129,7 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ── */}
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="mb-16">
@@ -153,12 +152,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CTA ── */}
+      
       <section className="relative py-32 px-6 overflow-hidden">
-        {/* Background */}
         <div className="absolute inset-0 bg-orange-500" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.08)_1px,transparent_1px)] bg-[size:40px_40px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-white/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-3xl mx-auto text-center text-black">
           <p className="text-xs font-bold tracking-[0.3em] uppercase text-black/50 mb-4">Join the movement</p>
