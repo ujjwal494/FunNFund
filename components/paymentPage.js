@@ -81,7 +81,7 @@ const PaymentPage = ({ username }) => {
             <ToastContainer />
             <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="afterInteractive" />
 
-            //Cover Image Section
+            {/* Cover image section */}
             <div className='cover w-full relative'>
                 
                 <img className='object-cover w-full h-96' src={currentUser.coverpic} alt="" />
@@ -139,7 +139,7 @@ const PaymentPage = ({ username }) => {
                         </div>
                     </div>
 
-                    //Payment box
+                    {/* Payment box */}
                     <div className="bg-[#111] border border-gray-800 rounded-3xl p-8 flex flex-col">
                         <h2 className='text-2xl font-bold mb-6'>Send some <span className="text-orange-500">Love</span></h2>
                         <div className='space-y-4'>
@@ -180,7 +180,7 @@ const PaymentPage = ({ username }) => {
                             </div>
                         </div>
 
-                        //Quick pay
+                        {/*Quick pay*/}
                         <div className='mt-10'>
                             <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Quick Support</p>
                             <div className='grid grid-cols-3 gap-3'>
